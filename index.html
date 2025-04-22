@@ -70,11 +70,11 @@
     <button onclick="startScare()">Click to Enter</button>
   </div>
 
-  <!-- Local image -->
+  <!-- Local image from jumpscare folder -->
   <img src="jumpscare.jpg" alt="Scare" class="jumpscare-img" id="jumpscare">
 
-  <!-- Local scream audio -->
-  <audio id="scream" src="scream.mp3" preload="auto"></audio>
+  <!-- Local audio from scream folder -->
+  <audio id="scream" src="scream/scream.mp3" preload="auto"></audio>
 
   <script>
     function startScare() {
@@ -94,7 +94,7 @@
             document.body.style.backgroundColor = "black";
           }
         }, 100);
-      }, 5000);
+      }, 5000); // 5 second delay before scare
     }
   </script>
 </body>
